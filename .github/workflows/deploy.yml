@@ -4,12 +4,12 @@ on:
   push:
     branches: [ "master" ]
 
-workflow_dispatch:
-  inputs:
-    job_name:
-      description: 'Run Job'
-      required: true
-      default: 'build'
+  workflow_dispatch:
+    inputs:
+      job_name:
+        description: 'Run Job'
+        required: true
+        default: 'build'
 
 jobs:
 
